@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap');
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* rgb(0, 6, 26); */
+body{
+    /* background: url(wally2.png) no-repeat;
+    background-size: 100%; */
+    /* width: 200px;
+    height: 200px; */
+    background-color:rgb(0, 6, 26);;
+    border-radius: 50%;
+    box-shadow: 100px 0px 3px rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+
+}
+.fon_color{
+    height: 900px;
+    width: 900px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    color: rgba(255, 214, 0, 0.63);
+    -webkit-box-shadow: 0px 0px 100px 14px rgba(255, 214, 0, 0.63);
+    -moz-box-shadow: 0px 0px 100px 14px rgba(255, 214, 0, 0.63);
+    box-shadow: 0px 0px 100px 14px rgba(255, 214, 0, 0.63);
+    border-radius: 50%;
+    /* margin: 0 auto; */
+    filter: blur(1px);
+}
+.fon_eva{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 25%;
+    left: 9%;
+}
+.fon_wally{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    right: 18%;
+    bottom: 35.4%; 
+    width: 50px;
+    height: 50px; 
+}
+.container{
+    font-size: 16px;
+    width: 90vw;
+    max-width: 37.5em;
+    padding: 3em 1.8em;
+    background-color: rgb(32, 59, 100);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 0.6em;
+    box-shadow: 1.2em 2em 3em rgba(0, 0, 0, 0.2);
+}
+
+.search-container{
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1.2em;
+}
+
+.search-container input, .search-container button{
+    font-size: 0.9em;
+    outline: none;
+    border-radius: 0.3em;
+}
+
+.search-container input{
+    background-color: transparent;
+    border: 1px solid #a0a0a0;
+    color: #fff;
+    padding: 0.7em;
+}
+
+.search-container input:focus{
+    border-color: #fff;
+}
+
+.search-container button{
+    background-color: #ac5555;
+    border: none;
+    cursor: pointer;
+}
+
+#result{
+    color: #fff;
+}
+
+.info{
+    position: relative;
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    margin-top: 1.2em;
+}
+
+.poster{
+    width: 100%;
+}
+
+h2{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+}
+
+.rating{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6em;
+    margin: 0.6em 0 0.9em 0;
+}
+
+.rating img{
+    width: 1.2em;
+}
+
+.rating h4{
+    display: inline-block;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.details{
+    display: flex;
+    font-size: 0.95em;
+    gap: 1em;
+    justify-content: center;
+    color: #a0a0a0;
+    margin: 0.6em 0;
+    font-weight: 300;
+}
+
+.genre{
+    display: flex;
+    justify-content: space-around;
+}
+
+.genre div{
+    border: 1px solid #a0a0a0;
+    font-size: 0.75em;
+    padding: 0.4em 1.6em;
+    border-radius: 0.4em;
+    font-weight: 300;
+}
+
+h3{
+    font-weight: 500;
+    margin-top: 1.2em;
+}
+
+p{
+    font-size: 0.9em;
+    font-weight: 300;
+    line-height: 1.8em;
+    text-align: justify;
+    color: #a0a0a0;
+}
+
+.msg{
+    text-align: center;
+}
+
+.subscribe{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 60%;
+    left: 5%;
+
+    background: #ac5555;
+    box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+.nameTxt{
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 45%;
+    left: 50%;
+    border-radius: 30px;
+}
+
+.mailTxt{
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 45%;
+    left: 50%;
+    border-radius: 30px;}
+.btnSub{
+    position: relative;
+}
+
+.btn{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 95%;
+    left: 3%;
+
+    height: 50px;
+    width: 110px;
+    color: #ac5555;
+    background-color: rgb(255, 218, 95);
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .container{
+        font-size: 14px;
+    }
+    .poster{
+        margin: auto;
+        width: auto;
+        max-height: 10.8em;
+    }
+
+    .info{
+        grid-template-columns: 1fr;
+    }
+
+}
